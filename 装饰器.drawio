@@ -1,9 +1,42 @@
-<mxfile host="app.diagrams.net" modified="2024-04-16T18:21:17.528Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" version="24.2.5" etag="mDn11u8ovNLNcYYf9M5I" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-16T18:35:56.244Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" etag="4mCJih1wQH0uOG6jR-3G" version="24.2.5" type="github">
   <diagram name="第 1 页" id="4tMwe1bXPz8jqsCyqkjy">
-    <mxGraphModel>
+    <mxGraphModel dx="1042" dy="553" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="MypHpb-wkNcfP4fXrXut-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MypHpb-wkNcfP4fXrXut-1" target="MypHpb-wkNcfP4fXrXut-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MypHpb-wkNcfP4fXrXut-1" value="f()-&amp;gt;decorator&lt;div&gt;g()-&amp;gt;is wrapped&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="290" y="60" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MypHpb-wkNcfP4fXrXut-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MypHpb-wkNcfP4fXrXut-2" target="MypHpb-wkNcfP4fXrXut-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MypHpb-wkNcfP4fXrXut-2" value="g传入f: f(g)" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="305" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MypHpb-wkNcfP4fXrXut-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MypHpb-wkNcfP4fXrXut-4" target="MypHpb-wkNcfP4fXrXut-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MypHpb-wkNcfP4fXrXut-4" value="f中重新包装g&lt;div&gt;写入额外代码&lt;div&gt;原样执行函数g(x)&lt;/div&gt;&lt;/div&gt;&lt;div&gt;返回重新包装的函数&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="305" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MypHpb-wkNcfP4fXrXut-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MypHpb-wkNcfP4fXrXut-6" target="MypHpb-wkNcfP4fXrXut-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MypHpb-wkNcfP4fXrXut-6" value="调用g(x)，实际得到&lt;div&gt;f(g)(x)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="305" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MypHpb-wkNcfP4fXrXut-8" value="执行f中的额外代码&lt;div&gt;将x传入函数g&lt;/div&gt;&lt;div&gt;执行g(x)，返回结果&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="505" y="475" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="MypHpb-wkNcfP4fXrXut-10" value="结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="515" y="350" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MypHpb-wkNcfP4fXrXut-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MypHpb-wkNcfP4fXrXut-8" target="MypHpb-wkNcfP4fXrXut-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
